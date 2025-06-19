@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Swipe Video Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="video-container">
+  <video id="videoPlayer" src="video1.mp4" autoplay loop muted></video>
+</div>
+
+<div class="bottom-nav">
+  <i id="homeBtn">🏠</i>
+  <i id="searchBtn">🔍</i>
+  <i id="exploreBtn">✨</i>
+  <i id="profileBtn">👤</i>
+</div>
+
+<!-- Arama Modal -->
+<div id="searchModal" class="modal">
+  <div class="modal-content">
+    <h3>Arama</h3>
+    <input type="text" id="searchInput" placeholder="Video ismi gir...">
+    <button onclick="searchVideo()">Ara</button>
+    <button onclick="closeSearchModal()">Kapat</button>
+  </div>
+</div>
+
+<!-- Profil Modal -->
+<div id="profileModal" class="modal">
+  <div class="modal-content">
+    <h3>Profil Sayfası</h3>
+    <p><strong>Kullanıcı:</strong> @seninprofilin</p>
+    <p><strong>Takipçi:</strong> 1520</p>
+    <p><strong>Takip Edilen:</strong> 300</p>
+    <p><strong>Video Sayısı:</strong> 3</p>
+    <button onclick="closeProfileModal()">Kapat</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
